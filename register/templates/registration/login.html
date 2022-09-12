@@ -1,0 +1,9 @@
+
+{% load crispy_forms_tags %}
+
+<form method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <p>¿Aún no tienes una cuenta? Crea una <a href="/register/">Aquí</a></p>
+    <button type="submit">Login</button>
+</form>
